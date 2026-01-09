@@ -16,13 +16,13 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            overflow-x: hidden;
         }
 
         .bg-blur {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: url('https://sun9-36.userapi.com/s/v1/ig2/z5FBZQ8siPzD8ND_1AR4yQaeYo30lVyK9F1wqoBxQfULeMMi0XD_KVgmyuF03lMCh0UZ2JgGsapGJbKJbkHDF0x3.jpg?quality=95&as=500x500&from=bu&cs=500x0') no-repeat center center;
+            /* Берем ту же картинку, что лежит в папке */
+            background: url('500x500bb.jpg') no-repeat center center;
             background-size: cover;
             filter: blur(60px) brightness(0.2);
             z-index: -1;
@@ -75,13 +75,6 @@
             font-size: 10px;
             text-transform: uppercase;
         }
-
-        .footer {
-            margin-top: 50px;
-            opacity: 0.4;
-            font-size: 11px;
-            letter-spacing: 1px;
-        }
     </style>
 </head>
 <body>
@@ -89,7 +82,7 @@
     <div class="bg-blur"></div>
 
     <div class="container">
-        <img src="https://sun9-36.userapi.com/s/v1/ig2/z5FBZQ8siPzD8ND_1AR4yQaeYo30lVyK9F1wqoBxQfULeMMi0XD_KVgmyuF03lMCh0UZ2JgGsapGJbKJbkHDF0x3.jpg?quality=95&as=500x500&from=bu&cs=500x0" alt="Happy New Year" class="cover-art">
+        <img src="500x500bb.jpg" alt="Happy New Year" class="cover-art">
 
         <h1 class="text-4xl font-black mb-2 italic tracking-tighter uppercase">Happy New Year</h1>
         <p class="text-zinc-400 text-xl mb-10 font-bold tracking-widest">$ONIK PLAY</p>
@@ -99,40 +92,23 @@
                 <div class="flex items-center gap-4"><i data-lucide="music" class="text-pink-500"></i><span class="font-bold">Apple Music</span></div>
                 <div class="btn-action">Listen</div>
             </a>
-
             <a href="https://www.youtube.com/watch?v=kSjbvWU5TqY" target="_blank" class="link-card">
                 <div class="flex items-center gap-4"><i data-lucide="youtube" class="text-red-600"></i><span class="font-bold">YouTube</span></div>
                 <div class="btn-action">Watch</div>
             </a>
-
             <a href="https://zvuk.com/track/173262537" target="_blank" class="link-card">
                 <div class="flex items-center gap-4"><i data-lucide="waves" class="text-green-400"></i><span class="font-bold">Звук</span></div>
                 <div class="btn-action">Слушать</div>
             </a>
-
-            <a href="https://music.mts.ru/album/40075297" target="_blank" class="link-card">
-                <div class="flex items-center gap-4"><i data-lucide="audio-lines" class="text-red-500"></i><span class="font-bold">МТС Музыка</span></div>
-                <div class="btn-action">Слушать</div>
-            </a>
-
-            <a href="https://www.deezer.com/ru/album/891527072" target="_blank" class="link-card">
-                <div class="flex items-center gap-4"><i data-lucide="disc" class="text-yellow-400"></i><span class="font-bold">Deezer</span></div>
-                <div class="btn-action">Listen</div>
-            </a>
-
-            <a href="https://guruvod.com/sound/russian-english/72792" target="_blank" class="link-card">
-                <div class="flex items-center gap-4"><i data-lucide="download" class="text-blue-400"></i><span class="font-bold">Guruvod</span></div>
-                <div class="btn-action">Download</div>
-            </a>
         </div>
 
-        <div class="footer">
-            <p class="font-bold text-white mb-1">DNB MEDIA GROUP</p>
-            <p>CREATED BY ILYA SHEV & ALAN</p>
-            <p class="mt-2 text-[10px]">© 2026 $ONIK PLAY</p>
+        <div class="mt-12 opacity-40 text-[11px]">
+            <p class="font-bold text-white mb-1 uppercase">DNB Media Group</p>
+            <p>Created by Listhaten/p>
         </div>
     </div>
 
     <script>lucide.createIcons();</script>
 </body>
 </html>
+
